@@ -95,17 +95,17 @@ class koth_101 extends KOTH_Base // Chernarus Full
 
         foreach (Man player : allPlayersInLargestRadius)
         {
-            float distanceToEvent = vector.Distance(player.GetPosition(), m_EventLocation);
-            
-            if (distanceToEvent <= 100.0)
+            float distanceSq = vector.DistanceSq(player.GetPosition(), m_EventLocation);
+
+            if (distanceSq <= 10000.0)       // 100m^2
             {
                 ProcessPlayersInZone(player, 100);
             }
-            else if (distanceToEvent <= 200.0)
+            else if (distanceSq <= 40000.0)  // 200m^2
             {
                 ProcessPlayersInZone(player, 50);
             }
-            else 
+            else                             // >200m, within 300m max radius
             {
                 ProcessPlayersInZone(player, 20);
             }

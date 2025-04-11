@@ -96,17 +96,17 @@ class koth_103 extends KOTH_Base // Battle of Prison Island
 
         foreach (Man player : allPlayersInLargestRadius)
         {
-            float distanceToEvent = vector.Distance(player.GetPosition(), m_EventLocation);
-            
-            if (distanceToEvent <= 25.0)
+            float distanceSq = vector.DistanceSq(player.GetPosition(), m_EventLocation);
+
+            if (distanceSq <= 625.0)         // 25^2
             {
                 ProcessPlayersInZone(player, 100);
             }
-            else if (distanceToEvent <= 50.0)
+            else if (distanceSq <= 2500.0)   // 50^2
             {
                 ProcessPlayersInZone(player, 50);
             }
-            else 
+            else                             // >50m and ≤75m
             {
                 ProcessPlayersInZone(player, 20);
             }

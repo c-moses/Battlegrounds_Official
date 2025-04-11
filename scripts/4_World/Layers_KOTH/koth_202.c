@@ -96,17 +96,17 @@ class koth_202 extends KOTH_Base // Topolin
 
         foreach (Man player : allPlayersInLargestRadius)
         {
-            float distanceToEvent = vector.Distance(player.GetPosition(), m_EventLocation);
-            
-            if (distanceToEvent <= 50.0)
+            float distanceSq = vector.DistanceSq(player.GetPosition(), m_EventLocation);
+
+            if (distanceSq <= 2500.0)         // 50^2
             {
                 ProcessPlayersInZone(player, 100);
             }
-            else if (distanceToEvent <= 100.0)
+            else if (distanceSq <= 10000.0)   // 100^2
             {
                 ProcessPlayersInZone(player, 50);
             }
-            else 
+            else                              // >100m and ≤150m
             {
                 ProcessPlayersInZone(player, 20);
             }
