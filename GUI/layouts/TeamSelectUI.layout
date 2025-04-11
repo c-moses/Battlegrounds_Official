@@ -1,0 +1,528 @@
+PanelWidgetClass rootFrame {
+ color 0 0 0 0.5882
+ position 10 115
+ size 200 400
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style blank
+ {
+  GridSpacerWidgetClass GridSpacerWidget {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   Columns 1
+   Rows 9
+   {
+    PanelWidgetClass ModePanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass Mode {
+       visible 1
+       ignorepointer 1
+       position 10 10
+       size 180 25
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass BluePanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass BlueKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass BlueKey {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "F1"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass BlueTeamID {
+         ignorepointer 1
+         color 0.1569 0.4314 0.7451 1
+         position -50 0
+         size 50 50
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_inventory image:armband"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass RedPanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass RedKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass RedKey {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "F2"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass RedTeamID {
+         ignorepointer 1
+         color 0.6157 0 0 1
+         position -50 0
+         size 50 50
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_inventory image:armband"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass GreenPanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass GreenKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass GreenKey {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "F3"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass GreenTeamID {
+         ignorepointer 1
+         color 0 0.349 0 1
+         position -50 0
+         size 50 50
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_inventory image:armband"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass OrangePanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass OrangeKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass OrangeKey {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "F4"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass OrangeTeamID {
+         ignorepointer 1
+         color 0.702 0.349 0 1
+         position -50 0
+         size 50 50
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_inventory image:armband"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass YellowPanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass YellowKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass YellowKey {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "F5"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass YellowTeamID {
+         ignorepointer 1
+         color 0.5216 0.5333 0 1
+         position -50 0
+         size 50 50
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_inventory image:armband"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass PinkPanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass PinkKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass PinkKey {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "F6"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass PinkTeamID {
+         ignorepointer 1
+         color 0.5922 0.2745 0.5843 1
+         position -50 0
+         size 50 50
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_inventory image:armband"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass NoTeamPanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass NoTeamKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass NoTeamKey {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "F7"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass NoTeamID {
+         ignorepointer 1
+         position -42 0
+         size 32 32
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:exit"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass LeaderboardPanel {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ImageWidgetClass LeaderboardKeyImage {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 50 0
+       size 50 50
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:key_icon"
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       {
+        TextWidgetClass ButtonText {
+         ignorepointer 1
+         size 1 0.6
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+        ImageWidgetClass QuestionMark {
+         ignorepointer 1
+         position -42 0
+         size 32 32
+         halign right_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:tutorials"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,653 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ clipchildren 1
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scaled 1
+ {
+  FrameWidgetClass FrameCompass {
+   visible 1
+   clipchildren 1
+   ignorepointer 1
+   position 0 0
+   size 648 41
+   halign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 1
+   vexactsize 1
+   {
+    PanelWidgetClass Compass {
+     ignorepointer 1
+     position -1 0
+     size 3 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass North {
+       ignorepointer 1
+       position 0 0
+       size 0.03 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "N"
+       "text halign" center
+      }
+      TextWidgetClass West {
+       ignorepointer 1
+       position -0.166 0
+       size 0.03 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "W"
+       "text halign" center
+      }
+      TextWidgetClass West2 {
+       ignorepointer 1
+       position 0.501 0
+       size 0.03 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "W"
+       "text halign" center
+      }
+      TextWidgetClass East {
+       ignorepointer 1
+       position 0.167 0
+       size 0.03 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "E"
+       "text halign" center
+      }
+      TextWidgetClass East2 {
+       ignorepointer 1
+       position -0.498 0
+       size 0.03 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "S"
+       "text halign" center
+      }
+      TextWidgetClass South {
+       ignorepointer 1
+       position 0.334 0
+       size 0.03 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "S"
+       "text halign" center
+      }
+      TextWidgetClass South2 {
+       ignorepointer 1
+       position -0.332 0
+       size 0.03 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "S"
+       "text halign" center
+      }
+      TextWidgetClass NE {
+       ignorepointer 1
+       position 0.0835 0
+       size 0.03 0.75
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "NE"
+       "text halign" center
+      }
+      TextWidgetClass NW {
+       ignorepointer 1
+       position -0.083 0
+       size 0.03 0.75
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "NW"
+       "text halign" center
+      }
+      TextWidgetClass SE {
+       ignorepointer 1
+       position 0.2505 0
+       size 0.03 0.75
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "SE"
+       "text halign" center
+      }
+      TextWidgetClass SW {
+       ignorepointer 1
+       position -0.249 0
+       size 0.03 0.75
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "SW"
+       "text halign" center
+      }
+      TextWidgetClass SW2 {
+       ignorepointer 1
+       position 0.4175 0
+       size 0.03 0.75
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "SW"
+       "text halign" center
+      }
+      TextWidgetClass SE2 {
+       ignorepointer 1
+       position -0.415 0
+       size 0.03 0.75
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "SE"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.0278 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "15"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.0556 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "30"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.1113 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "60"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.1391 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "75"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.1948 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "105"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.2226 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "120"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.2783 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "150"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.3061 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "165"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.3618 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "195"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.3896 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "210"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.4453 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "240"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position 0.4731 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "255"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.0276 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "345"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.0553 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "330"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.1106 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "300"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.1383 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "285"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.1936 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "255"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.2213 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "240"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.2766 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "210"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.3043 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "195"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.3596 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "165"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.3873 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "150"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.4426 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "120"
+       "text halign" center
+      }
+      TextWidgetClass {
+       ignorepointer 1
+       position -0.4703 0
+       size 0.025 0.5
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "105"
+       "text halign" center
+      }
+     }
+    }
+    GridSpacerWidgetClass Center {
+     visible 1
+     ignorepointer 1
+     color 0.8353 0 0 1
+     size 4 0.3
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+    }
+    FrameWidgetClass BuyZoneFrame {
+     visible 0
+     ignorepointer 1
+     position -1 0
+     size 3 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass BuyZoneDistance {
+       clipchildren 1
+       ignorepointer 1
+       size 50 10
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass TeleporterIcon {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       color 0.1961 0.3922 0.5882 1
+       size 33 33
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:ccgui_enforce image:CrSelect"
+       mode blend
+       "src alpha" 1
+       "clamp mode" wrap
+       "stretch mode" none
+       filter 1
+       {
+        TextWidgetClass BuyZoneIcon {
+         ignorepointer 1
+         color 0.1569 0.6275 0.2745 1
+         position 1 0
+         size 33 33
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "$"
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    FrameWidgetClass ObjectiveFrame {
+     visible 0
+     ignorepointer 1
+     position -1 0
+     size 3 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass ObjectiveDistance {
+       visible 1
+       clipchildren 1
+       ignorepointer 1
+       keepsafezone 0
+       size 50 10
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "size to text v" 0
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass ObjectiveIcon {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       color 0.6667 0 0 1
+       size 33 33
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:ccgui_enforce image:Icon40Attack"
+       mode blend
+       "src alpha" 1
+       "clamp mode" wrap
+       "stretch mode" none
+       filter 1
+      }
+     }
+    }
+    FrameWidgetClass Objective2Frame {
+     visible 0
+     ignorepointer 1
+     position -1 0
+     size 3 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass Objective2Distance {
+       visible 1
+       clipchildren 1
+       ignorepointer 1
+       keepsafezone 0
+       size 50 10
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "size to text v" 0
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass Objective2Icon {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       color 0.6667 0.4314 0 1
+       size 33 33
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:ccgui_enforce image:Icon40Attack"
+       mode blend
+       "src alpha" 1
+       "clamp mode" wrap
+       "stretch mode" none
+       filter 1
+      }
+     }
+    }
+   }
+  }
+ }
+}

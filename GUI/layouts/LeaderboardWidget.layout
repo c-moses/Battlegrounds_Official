@@ -1,0 +1,599 @@
+PanelWidgetClass rootFrame {
+ clipchildren 1
+ ignorepointer 0
+ color 0 0 0 0.5882
+ position 0 0
+ size 1000 600
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style rover_sim_colorable
+ {
+  ButtonWidgetClass CloseButton {
+   color 0.6667 0 0 1
+   position 10 10
+   size 50 50
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   userID 741
+   {
+    ImageWidgetClass CloseTransferImage {
+     ignorepointer 1
+     size 48 48
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:dayz_gui image:icon_x"
+     mode blend
+     "src alpha" 1
+     "clamp mode" wrap
+    }
+    PanelWidgetClass ClosePanel {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     size 50 50
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+    }
+   }
+  }
+  PanelWidgetClass HeaderPanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 10
+   size 920 50
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    GridSpacerWidgetClass CategoryGrid {
+     ignorepointer 1
+     size 620 50
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     Padding 5
+     Margin 5
+     "Size To Content H" 1
+     content_halign center
+     content_valign center
+     Rows 1
+    }
+   }
+  }
+  FrameWidgetClass Top50Frame {
+   visible 0
+   ignorepointer 1
+   position 0 70
+   size 980 520
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    PanelWidgetClass InfoPanel {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 0 2
+     size 980 30
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      TextWidgetClass Rank {
+       ignorepointer 1
+       position 4 0
+       size 50 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Rank"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass Name {
+       ignorepointer 1
+       position 68 0
+       size 300 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Name"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass PlayerKills {
+       ignorepointer 1
+       position 380 0
+       size 135 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Player Kills"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass InfectedKills {
+       ignorepointer 1
+       position 496 0
+       size 145 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Infected Kills"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass Deaths {
+       ignorepointer 1
+       position 633 0
+       size 95 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Deaths"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass Score {
+       ignorepointer 1
+       position 768 0
+       size 170 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "Score"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass ListPanel {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 0 40
+     size 980 480
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ScrollWidgetClass PlayerList {
+       ignorepointer 0
+       position 0 0
+       size 980 480
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "Scrollbar V" 1
+       {
+        GridSpacerWidgetClass PlayerListGrid {
+         ignorepointer 1
+         size 980 480
+         halign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "Size To Content H" 1
+         "Size To Content V" 1
+         content_halign center
+         content_valign center
+         Columns 1
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass PlayerFrame {
+   visible 1
+   ignorepointer 1
+   position 0 70
+   size 980 520
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    PanelWidgetClass StatsPanel {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     size 980 520
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      PanelWidgetClass TitlePanel {
+       ignorepointer 1
+       color 0 0 0 0.3922
+       position 10 10
+       size 600 120
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style rover_sim_colorable
+       {
+        TextWidgetClass PlayerNameText {
+         ignorepointer 1
+         size 600 50
+         halign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text halign" center
+         "text valign" center
+        }
+        ProgressBarWidgetClass XPProgressBar {
+         ignorepointer 1
+         position 0 10
+         size 580 5
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         style Stamina
+        }
+        TextWidgetClass XPBaseText {
+         ignorepointer 1
+         position 10 25
+         size 200 25
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text valign" center
+        }
+        TextWidgetClass XPLevelText {
+         ignorepointer 1
+         position 0 20
+         size 100 45
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text halign" center
+         "text valign" center
+        }
+        TextWidgetClass XPReqText {
+         ignorepointer 1
+         position 10 25
+         size 200 25
+         halign right_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text halign" right
+         "text valign" center
+        }
+       }
+      }
+      PanelWidgetClass PlayerStats {
+       ignorepointer 1
+       color 0 0 0 0.3922
+       position 10 10
+       size 295 370
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style rover_sim_colorable
+       {
+        TextWidgetClass ScoreText {
+         ignorepointer 1
+         position 10 15
+         size 275 25
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text valign" center
+        }
+        TextWidgetClass CashText {
+         ignorepointer 1
+         color 0.1569 0.6275 0.2745 1
+         position 10 55
+         size 275 25
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text valign" center
+        }
+        TextWidgetClass pKillsText {
+         ignorepointer 1
+         position 10 95
+         size 275 25
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text valign" center
+        }
+        TextWidgetClass zKillsText {
+         ignorepointer 1
+         position 10 135
+         size 275 25
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text valign" center
+        }
+        TextWidgetClass DeathsText {
+         ignorepointer 1
+         position 10 175
+         size 275 25
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "text valign" center
+        }
+        ButtonWidgetClass CopySteamID {
+         color 0.1569 0.4314 0.7451 1
+         position 10 10
+         size 50 50
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         {
+          ImageWidgetClass CopyImage {
+           ignorepointer 1
+           size 40 40
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           image0 "set:dayz_gui image:icon_copy"
+           mode blend
+           "src alpha" 1
+           "clamp mode" wrap
+          }
+         }
+        }
+        ButtonWidgetClass ShowSteamID {
+         color 0.1569 0.4314 0.7451 1
+         position 70 10
+         size 215 50
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         userID 998
+         switch toggle
+         {
+          TextWidgetClass SteamIDText {
+           ignorepointer 1
+           size 215 22
+           halign center_ref
+           valign center_ref
+           hexactpos 1
+           vexactpos 1
+           hexactsize 1
+           vexactsize 1
+           text "[SHOW STEAM ID]"
+           font "gui/fonts/etelkatextpro"
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass PreviewPanel {
+       ignorepointer 1
+       color 0 0 0 0.3922
+       position 10 10
+       size 350 500
+       halign right_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style rover_sim_colorable
+       {
+        PlayerPreviewWidgetClass PlayerPreviewWidget {
+         clipchildren 1
+         ignorepointer 1
+         keepsafezone 0
+         position 0 0
+         size 1 1
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+        }
+       }
+      }
+      PanelWidgetClass NewPanel {
+       ignorepointer 1
+       color 0 0 0 0.3922
+       position 315 10
+       size 295 370
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style rover_sim_colorable
+       {
+        TextWidgetClass TasksText {
+         ignorepointer 1
+         position 10 15
+         size 275 25
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text ""
+         "text halign" center
+         "text valign" center
+        }
+        PanelWidgetClass ItemsPanel {
+         ignorepointer 1
+         color 0 0 0 0.3922
+         position 0 10
+         size 275 310
+         halign center_ref
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         style blank
+         {
+          ScrollWidgetClass ScrollWidget1 {
+           ignorepointer 0
+           position 0 0
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           "Scrollbar V" 1
+           {
+            GridSpacerWidgetClass GridSpacerWidget1 {
+             ignorepointer 1
+             size 1 0
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             Padding 5
+             Margin 5
+             "Size To Content V" 1
+             Columns 2
+             Rows 100
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass OnlineFrame {
+   visible 0
+   ignorepointer 1
+   position 0 70
+   size 980 520
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   {
+    PanelWidgetClass ListPanel2 {
+     visible 1
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 0 0
+     size 980 520
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ScrollWidgetClass PlayerList2 {
+       ignorepointer 0
+       position 0 0
+       size 980 520
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "Scrollbar V" 1
+       {
+        GridSpacerWidgetClass PlayerListGrid2 {
+         ignorepointer 1
+         size 980 520
+         halign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         "Size To Content H" 1
+         "Size To Content V" 1
+         content_halign center
+         content_valign center
+         Columns 1
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+ImageWidgetClass rootFrame {
+ size 100 100
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ mode blend
+ "src alpha" 1
+ "clamp mode" wrap
+ "stretch mode" invalid
+}

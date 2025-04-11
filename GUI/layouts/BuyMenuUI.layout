@@ -1,0 +1,373 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ clipchildren 0
+ ignorepointer 1
+ position 0 0
+ size 1000 600
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 1
+ {
+  PanelWidgetClass BuyPanel {
+   clipchildren 0
+   inheritalpha 0
+   ignorepointer 1
+   color 0 0 0 0.3922
+   size 1000 600
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    PanelWidgetClass HeaderPanelL {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 70 10
+     size 620 50
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      GridSpacerWidgetClass GridSpacerWidget3 {
+       ignorepointer 1
+       size 620 50
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       Padding 5
+       Margin 5
+       content_halign center
+       content_valign center
+       Columns 9
+       Rows 1
+      }
+     }
+    }
+    PanelWidgetClass HeaderPanelR {
+     clipchildren 1
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 70 10
+     size 230 50
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      TextWidgetClass CurrencyAmount {
+       ignorepointer 1
+       color 0.1569 0.6275 0.2745 1
+       size 230 30
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       font "gui/fonts/etelkatextpro"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass SubMenu {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 10 10
+     size 50 50
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass SubMenuButton {
+       color 0.1569 0.4314 0.7451 1
+       position 0 0
+       size 50 50
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 21144112
+       {
+        ImageWidgetClass SubMenuImage {
+         ignorepointer 1
+         size 48 48
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:arrow_left"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass MainPanel {
+     clipchildren 1
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 10 10
+     size 680 520
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      PanelWidgetClass ItemsPanel {
+       ignorepointer 1
+       size 660 500
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       {
+        ScrollWidgetClass ScrollWidget1 {
+         ignorepointer 0
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         "Scrollbar V" 1
+         {
+          GridSpacerWidgetClass GridSpacerWidget1 {
+           ignorepointer 1
+           size 1 0
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           Padding 5
+           Margin 5
+           "Size To Content V" 1
+           Columns 4
+           Rows 100
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass CartPanel {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 10 70
+     size 290 360
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ScrollWidgetClass ScrollWidget2 {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       "Scrollbar V" 1
+       {
+        GridSpacerWidgetClass GridSpacerWidget2 {
+         ignorepointer 1
+         size 1 0
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         "Size To Content V" 1
+         Columns 1
+         Rows 100
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass PurchasePanel {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 10 10
+     size 290 150
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass PurchaseButton {
+       inheritalpha 0
+       color 0.1569 0.6275 0.2745 1
+       position 0 10
+       size 270 50
+       halign center_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 4112
+       "no focus" 0
+       "text color" 0.1569 0.6275 0.2745 1
+       {
+        TextWidgetClass PurchaseText {
+         ignorepointer 1
+         position 0 0
+         size 260 40
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "PURCHASE"
+         font "gui/fonts/etelkatextpro"
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      TextWidgetClass CartTotal {
+       ignorepointer 1
+       color 0.6863 0.5686 0.2549 1
+       position 10 10
+       size 270 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       font "gui/fonts/etelkatextpro"
+       "text halign" center
+       "text valign" center
+      }
+      ButtonWidgetClass SaveCart {
+       color 0.1569 0.4314 0.7451 1
+       position 10 50
+       size 135 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 69
+       {
+        TextWidgetClass TextWidget0 {
+         ignorepointer 1
+         size 135 30
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "SAVE"
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      ButtonWidgetClass LoadCart {
+       color 0.1569 0.6275 0.2745 1
+       position 145 50
+       size 135 30
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 69
+       {
+        TextWidgetClass TextWidget1 {
+         ignorepointer 1
+         size 135 30
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "LOAD"
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass CloseMenuPanel {
+     ignorepointer 1
+     color 0 0 0 0.3922
+     position 10 10
+     size 50 50
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass CloseMenuButton {
+       color 0.6667 0 0 1
+       position 0 0
+       size 50 50
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 41122114
+       {
+        ImageWidgetClass CloseMenuImage {
+         ignorepointer 1
+         size 48 48
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         image0 "set:dayz_gui image:icon_x"
+         mode blend
+         "src alpha" 1
+         "clamp mode" wrap
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

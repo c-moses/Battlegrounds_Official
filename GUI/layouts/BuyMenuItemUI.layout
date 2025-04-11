@@ -1,0 +1,179 @@
+PanelWidgetClass rootFrame {
+ color 0 0 0 0.3137
+ position 0 0
+ size 200 200
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 1
+ style blank
+ {
+  ButtonWidgetClass ItemButton {
+   clipchildren 1
+   color 0.1569 0.6275 0.2745 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   userID 12345678
+   "text color" 0.1569 0.6275 0.2745 1
+   {
+    PanelWidgetClass ItemPanel {
+     ignorepointer 1
+     color 0 0 0 0.1961
+     size 200 40
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style DayZDefaultPanelTop
+     {
+      TextWidgetClass ItemText {
+       ignorepointer 1
+       position 0 0
+       size 200 20
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "ITEM"
+       font "gui/fonts/etelkatextpro"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass PricePanel {
+     ignorepointer 1
+     color 0 0 0 0.1961
+     size 200 40
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style DayZDefaultPanelBottom
+     {
+      TextWidgetClass PriceText {
+       ignorepointer 1
+       position 0 0
+       size 200 28
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "PRICE"
+       font "gui/fonts/etelkatextpro"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass PreviewPanel {
+     ignorepointer 1
+     size 200 120
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      ItemPreviewWidgetClass ItemPreview {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+     }
+    }
+   }
+  }
+  ButtonWidgetClass RelatedButton {
+   visible 0
+   color 0.1569 0.6275 0.2745 1
+   position 0 40
+   size 50 50
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   userID 2114
+   {
+    ImageWidgetClass ImageWidgetMag {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     image0 "set:dayz_inventory image:magazine2"
+     mode blend
+     "src alpha" 1
+     "clamp mode" clamp
+    }
+    ImageWidgetClass ImageWidgetAmmo {
+     visible 0
+     ignorepointer 1
+     size 0.8 0.8
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     image0 "set:dayz_gui image:icon_bullet"
+     mode blend
+     "src alpha" 1
+     "clamp mode" clamp
+    }
+    ImageWidgetClass ImageWidgetConfirm {
+     visible 0
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     image0 "set:rover_imageset image:PluginIconMod"
+     mode blend
+     "src alpha" 1
+     "clamp mode" clamp
+    }
+   }
+  }
+  PanelWidgetClass BlackMarket {
+   visible 0
+   ignorepointer 0
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+  }
+ }
+}

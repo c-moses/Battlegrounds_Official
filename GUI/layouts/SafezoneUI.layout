@@ -1,0 +1,70 @@
+FrameWidgetClass rootFrame {
+ position 40 85
+ size 80 60
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  PanelWidgetClass SafezonePanel {
+   inheritalpha 0
+   ignorepointer 1
+   color 0 0 0 0.3137
+   size 80 60
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 1
+   vexactsize 1
+   style ToolbarWidget
+   {
+    TextWidgetClass BuyMenuText {
+     visible 0
+     ignorepointer 1
+     size 80 22
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     font "gui/fonts/etelkatextpro"
+     "text halign" center
+     "text valign" center
+    }
+    ImageWidgetClass KeyImage {
+     visible 0
+     clipchildren 1
+     ignorepointer 1
+     size 50 50
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:dayz_gui image:key_icon"
+     mode blend
+     "src alpha" 1
+     "clamp mode" clamp
+     {
+      TextWidgetClass KeyText {
+       ignorepointer 1
+       size 1 0.6
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       font "gui/fonts/etelkatextpro"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,155 @@
+PanelWidgetClass rootFrame {
+ color 0 0 0 0.3922
+ size 1000 600
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style DayZDefaultPanel
+ {
+  PanelWidgetClass BackPanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 10
+   size 50 50
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    ButtonWidgetClass BackButton {
+     color 0.1569 0.4314 0.7451 1
+     size 50 50
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     userID 1357
+     {
+      ImageWidgetClass BackImage {
+       ignorepointer 1
+       position 0 0
+       size 48 48
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:arrow_left"
+       mode blend
+       "src alpha" 1
+       "clamp mode" wrap
+       "flip u" 0
+       "flip v" 0
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass CurrencyPanel {
+   clipchildren 1
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 70 10
+   size 230 50
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    TextWidgetClass CurrencyAmount {
+     ignorepointer 1
+     color 0.1569 0.6275 0.2745 1
+     size 230 30
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     font "gui/fonts/etelkatextpro"
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass ClosePanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 10
+   size 50 50
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    ButtonWidgetClass CloseTransferButton {
+     color 0.6667 0 0 1
+     size 50 50
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     userID 7331
+     {
+      ImageWidgetClass CloseTransferImage {
+       ignorepointer 1
+       size 48 48
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 "set:dayz_gui image:icon_x"
+       mode blend
+       "src alpha" 1
+       "clamp mode" wrap
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass MainPanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 70 10
+   size 620 50
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    GridSpacerWidgetClass CategoryGrid {
+     ignorepointer 1
+     size 620 50
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     Padding 5
+     Margin 5
+     "Size To Content H" 1
+     content_halign center
+     content_valign center
+     Rows 1
+    }
+   }
+  }
+ }
+}

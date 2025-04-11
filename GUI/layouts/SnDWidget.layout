@@ -1,0 +1,114 @@
+FrameWidgetClass rootFrame {
+ clipchildren 0
+ ignorepointer 1
+ position 0 0
+ size 0.9 0.9
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass SnDPanel {
+   visible 1
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 0 90
+   size 225 50
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    TextWidgetClass PlayersAlive {
+     clipchildren 0
+     ignorepointer 1
+     position 0 0.1
+     size 0.9 0.2
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     text "Players Alive:"
+     font "gui/fonts/etelkatextpro"
+     "text halign" center
+     "text valign" center
+    }
+    ImageWidgetClass BlueTeam {
+     clipchildren 0
+     ignorepointer 1
+     color 0.1882 0.3843 0.6784 1
+     position -70 8
+     size 30 30
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:dayz_gui image:icon_player"
+     mode blend
+     "src alpha" 1
+     "clamp mode" wrap
+     {
+      TextWidgetClass BlueCount {
+       clipchildren 0
+       ignorepointer 1
+       keepsafezone 0
+       position 40 0
+       size 50 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "size to text h" 1
+       "size to text v" 0
+       "text valign" center
+      }
+     }
+    }
+    ImageWidgetClass RedTeam {
+     clipchildren 0
+     ignorepointer 1
+     color 0.6157 0 0 1
+     position 20 8
+     size 30 30
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:dayz_gui image:icon_player"
+     mode blend
+     "src alpha" 1
+     "clamp mode" wrap
+     {
+      TextWidgetClass RedCount {
+       clipchildren 1
+       ignorepointer 1
+       position 40 0
+       size 50 20
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       scaled 1
+       "exact text" 0
+       "size to text h" 1
+       "size to text v" 0
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

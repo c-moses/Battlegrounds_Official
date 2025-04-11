@@ -1,0 +1,369 @@
+PanelWidgetClass rootFrame {
+ color 0 0 0 0.5882
+ size 1000 600
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style rover_sim_colorable
+ {
+  PanelWidgetClass ClosePanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 10
+   size 50 50
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    ButtonWidgetClass CloseButton {
+     color 0.6667 0 0 1
+     size 50 50
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     userID 99
+     {
+      ImageWidgetClass CloseImage {
+       ignorepointer 1
+       size 48 48
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 99
+       image0 "set:dayz_gui image:icon_x"
+       mode blend
+       "src alpha" 1
+       "clamp mode" wrap
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass HeaderPanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 10
+   size 920 50
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    TextWidgetClass GameMaster {
+     ignorepointer 1
+     position 25 0
+     size 800 35
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "Game Master"
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+  PanelWidgetClass LayerPanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 10
+   size 485 520
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    ScrollWidgetClass ScrollWidget {
+     clipchildren 1
+     ignorepointer 0
+     position 15 10
+     size 460 500
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     "Scrollbar V" 1
+     {
+      GridSpacerWidgetClass GridSpacerWidget {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       "Size To Content H" 1
+       "Size To Content V" 1
+       content_halign center
+       Columns 1
+       Rows 100
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass ParamsPanelSND {
+   visible 1
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 210
+   size 485 160
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    FrameWidgetClass BombTime {
+     ignorepointer 1
+     position 0 110
+     size 465 40
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      EditBoxWidgetClass EditBoxBombTime {
+       size 100 30
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 420
+       style DefaultBorder
+       text "90"
+      }
+      TextWidgetClass TextWidget4 {
+       ignorepointer 1
+       size 355 30
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "[SND] BOMB TIME"
+      }
+     }
+    }
+    FrameWidgetClass PreRoundTime {
+     ignorepointer 1
+     position 0 60
+     size 465 40
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      EditBoxWidgetClass EditBoxPreRoundTime {
+       size 100 30
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 420
+       style DefaultBorder
+       text "90"
+      }
+      TextWidgetClass TextWidget5 {
+       ignorepointer 1
+       size 355 30
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "[SND] PREROUND TIME"
+      }
+     }
+    }
+    FrameWidgetClass RoundSwitch {
+     ignorepointer 1
+     position 0 10
+     size 465 40
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      EditBoxWidgetClass EditBoxRoundSwitch {
+       size 100 30
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 420
+       style DefaultBorder
+       text "3"
+      }
+      TextWidgetClass TextWidget6 {
+       ignorepointer 1
+       size 355 30
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "[SND] ROUND SWITCH"
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass ScorePanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 90
+   size 485 110
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    FrameWidgetClass ScoreLimit {
+     ignorepointer 1
+     position 0 10
+     size 465 40
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      EditBoxWidgetClass EditBoxScoreLimit {
+       size 100 30
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 420
+       style DefaultBorder
+       text "10"
+      }
+      TextWidgetClass TextWidget0 {
+       ignorepointer 1
+       position 0 0
+       size 355 30
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "SCORE LIMIT"
+      }
+     }
+    }
+    FrameWidgetClass RoundTime {
+     ignorepointer 1
+     position 0 10
+     size 465 40
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      EditBoxWidgetClass EditBoxRoundTime {
+       size 100 30
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       userID 420
+       style DefaultBorder
+       text "600"
+      }
+      TextWidgetClass TextWidget1 {
+       ignorepointer 1
+       size 355 30
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "ROUND TIME"
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass ConfirmPanel {
+   ignorepointer 1
+   color 0 0 0 0.3922
+   position 10 10
+   size 485 70
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    ButtonWidgetClass ChangeLayer {
+     color 0.1569 0.6275 0.2745 1
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     userID 69
+     {
+      TextWidgetClass ChangeLayerText {
+       ignorepointer 1
+       size 400 40
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "CHANGE LAYER"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

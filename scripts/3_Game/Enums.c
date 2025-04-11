@@ -1,0 +1,17 @@
+enum bgModifiers
+{
+	MDF_FIRSTAID = 342093,
+	MDF_PROPITAL
+}
+
+enum DeathType
+{
+	UNKNOWN = 0,
+	PVP,
+	SUICIDE,
+	BLEEDING,
+	STARVING,
+	ZOMBIE,
+	ANIMAL,
+	FALL
+}

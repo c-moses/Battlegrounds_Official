@@ -1,0 +1,99 @@
+PanelWidgetClass rootFrame {
+ clipchildren 0
+ color 0 0 0 0.3922
+ position 40 85
+ size 80 30
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style blank
+ {
+  TextWidgetClass Timer {
+   visible 1
+   ignorepointer 1
+   size 80 30
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   font "gui/fonts/etelkatextpro"
+   "text halign" center
+   "text valign" center
+  }
+  TextWidgetClass EventState {
+   visible 0
+   clipchildren 0
+   ignorepointer 1
+   position 0 -30
+   size 0 30
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   "size to text h" 1
+   "text halign" center
+   "text valign" center
+   {
+    ImageWidgetClass KeyImage {
+     visible 0
+     ignorepointer 1
+     position -30 0
+     size 30 30
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     image0 "set:dayz_gui image:key_icon"
+     mode blend
+     "src alpha" 1
+     "clamp mode" wrap
+     {
+      TextWidgetClass KeyTextShort {
+       ignorepointer 1
+       size 25 18
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass KeyText {
+     visible 0
+     ignorepointer 1
+     position -150 0
+     size 150 30
+     halign right_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      TextWidgetClass KeyTextLong {
+       ignorepointer 1
+       size 0 15
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       "size to text h" 1
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}
